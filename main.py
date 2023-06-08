@@ -141,7 +141,7 @@ def main():
 
         convert_files(matching_files, log_file)
 
-    print(f'Conversion complete. Log file saved to "{log_file_name}".')
+    # print(f'Conversion complete. Log file saved to "{log_file_name}".')
 
 
 if __name__ == "__main__":

@@ -1,0 +1,9 @@
+version: '3'
+services:
+  mediaconv:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./convert_media:/app/convert_media
+      - ./converted_media:/app/converted_media
