@@ -1,4 +1,5 @@
 # mediaconv_docker
+
 Dockerized version of Python FFmpeg media converter
 
 ## Prerequisites
@@ -7,7 +8,7 @@ Before running this application, ensure that you have the following prerequisite
 
 - [Docker](https://www.docker.com/get-started): Ensure Docker is installed and running on your system.
 - In Windows, docker-compose should be included with the standard install of Docker.
-- In Linux, you may need to install docker-compose separately using your distributions package manager.
+- In Linux, you may need to install docker-compose separately using your distribution's package manager.
 
 ## Setup
 
@@ -30,6 +31,13 @@ To convert the video files using Docker Compose, follow these steps:
    ```shell
    docker-compose up
    ```
+
+   Alternately, you can run 'detached' in order to avoid tying up your terminal while the conversion is running.
+
+      ```shell
+   docker-compose up -d
+   ```
+
 3. The application will automatically convert the video files in the `convert_media` folder to the `.mp4` format using FFmpeg. The converted files will be placed in the `converted_media` folder.
 
 4. Once the conversion process is complete, you can access the converted files from the `converted_media` folder.
