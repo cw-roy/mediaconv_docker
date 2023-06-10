@@ -1,4 +1,4 @@
-# mediaconv_docker
+# mediaconv_docker - works GREAT, but updates are on hold until the _CL version is in prod
 
 Dockerized version of Python FFmpeg media converter
 
